@@ -15,8 +15,14 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 }
 
-h1{ color:#787878;}
+h1{ color:#F00000;}
 
+a{
+    color:#FF0000;
+    &:hover{
+        color: #880000;
+    }
+}
 p{
 	color: #8f9aa0!important;
 	font-size: 19px!important;
@@ -64,6 +70,10 @@ span{
      margin:40px 0;
      span{
         width: auto!important;
+        margin-top: 5px;
+     }
+     h6{
+        float: left;
      }
   }
   h1{
@@ -242,6 +252,7 @@ span{
     background:url(grass_mini.jpg) center bottom fixed;
     border-top:1px solid #dbdbdb;
 }
+
 // @media (max-width: 1150px){
 //       .content{
 //       	width: 100%;
