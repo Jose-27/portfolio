@@ -1,0 +1,249 @@
+// ====================================================================================================
+
+// Main CSS 
+
+// ====================================================================================================
+* {
+	padding:0;
+	margin:0;
+}
+
+html, body {
+	height:100%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1{ color:#787878;}
+
+p{
+	color: #8f9aa0!important;
+	font-size: 19px!important;
+}
+span{
+	position:absolute;
+	z-index:100;
+	font-style: italic;
+	font-size:4em;
+	color:white;
+	width:100%;
+	top:20%;
+	text-align:center;
+}
+.filter{
+    background-color:black; 
+    display:block; 
+    opacity:0.3;
+    filter:alpha(opacity=100);
+    width:100%;
+  	height:700px;
+}
+.picture-header{
+	height:700px;
+	width:100%;
+	background:url(better_mini.jpg) repeat-y center bottom fixed;
+	p{
+		font-family: 'Lora', serif;
+		text-align: center;
+		font-size: 5em;
+		color:#fff;
+		position:absolute;
+	}
+}
+.child-container{
+	width:100%;
+	height:auto;
+
+	.content,
+	.content2,
+	.content3, 
+	.content4{
+     height: auto;
+     padding:10px;
+     margin:40px 0;
+     span{
+        width: auto!important;
+     }
+  }
+  h1{
+  	text-align: center;
+    margin-bottom:50px;
+  }
+ }
+
+	.circle1{
+    top: 0;
+    z-index: 900;
+    width:40px;
+    height: 40px;
+    -webkit-border-radius:50px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
+    box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
+
+}
+.triangle-right {
+	top:24%;
+	left:32%;
+	width: 0;
+	height: 0;
+	position:absolute;
+	border-top: 50px solid transparent;
+	border-left: 100px solid #FFFFFF ;
+	border-bottom: 50px solid transparent;
+}
+
+.pulsar{
+     border: 2px solid rgb(0,114,255);
+    -webkit-border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    -webkit-animation: pulsate 2.5s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0;
+ }
+@-webkit-keyframes pulsate {
+     0% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.0;}
+}
+
+.playpausebtn {
+	margin:0 auto;
+    width: 200px;
+    height: 200px;  
+    cursor: pointer;
+    font-size: .8em;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+
+}
+
+.playpausebtn .front {
+    top: 0;
+    z-index: 900;
+    width:400px;
+    height: 400px;
+    -webkit-border-radius:400px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
+    box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0, #000000),
+    color-stop(0.5, #0A1029),
+    color-stop(1, #000000)
+    );
+    background-image: -o-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+	background-image: -moz-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+	background-image: -webkit-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+	background-image: -ms-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+	background-image: linear-gradient(to right, #000000 0%, #0A1029 50%, #000000 100%);
+}
+
+.playpausebtn .back {
+    top: 0;
+    z-index: 800;
+    width:400px;
+    height: 400px;
+    -webkit-border-radius:400px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 114, 255, 1);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(0, 114, 255, 1);
+    box-shadow:         0px 0px 30px 0px rgba(0, 114, 255, 1);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0, #000000),
+    color-stop(0.5, #0A1029),
+    color-stop(1, #000000)
+	);
+    background-image: -o-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+    background-image: -moz-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+    background-image: -webkit-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+    background-image: -ms-linear-gradient(right, #000000 0%, #0A1029 50%, #000000 100%);
+    background-image: linear-gradient(to right, #000000 0%, #0A1029 50%, #000000 100%);
+}
+
+.playpausebtn .front {
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    width: 200px;
+    height: 200px;
+    border-radius:200px;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    .word h2{
+	    position:absolute;
+		text-align:center;
+		top:33%;
+		width:200px;
+		height:auto;
+		color:#fff;
+		text-shadow: 0px 0px 20px rgba(0, 114, 255, 1);
+	}
+}
+
+.playpausebtn.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.playpausebtn .back {
+    position: absolute;
+    top: 0;
+    z-index: 800;
+    width: 200px;
+    height: 200px;
+     border-radius:200px;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+ 
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.playpausebtn.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+.footer{
+    height:400px;
+    width:100%;
+    background:url(grass_mini.jpg) center bottom fixed;
+    border-top:1px solid #dbdbdb;
+}
+// @media (max-width: 1150px){
+//       .content{
+//       	width: 100%;
+//   }
+//}
