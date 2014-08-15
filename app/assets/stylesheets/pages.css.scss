@@ -253,8 +253,8 @@ span{
     border-top:1px solid #dbdbdb;
 }
 
-// @media (max-width: 1150px){
-//       .content{
-//       	width: 100%;
-//   }
-//}
+@media (max-width: 800px){
+      .main.container span{
+        font-size: 45px;
+      }
+}
