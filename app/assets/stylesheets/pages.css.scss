@@ -260,6 +260,11 @@ span{
     animation-fill-mode: both; 
     -webkit-animation-timing-function: ease-in-out; 
     animation-timing-function: ease-in-out; 
+    #counter{
+        font-weight: 100;
+        font-size: 40px;
+         text-shadow: 4px 4px 30px rgba(0, 0, 0, 1);
+    }
 } 
 
 @-webkit-keyframes fadeInDown { 
@@ -290,13 +295,25 @@ span{
 }
 
 .footer{
-    height:100px;
+    height:200px;
     width:100%;
 }
+
 
 @media (max-width: 800px){
       .main.container span{
         font-size: 35px;
         text-align: left;
+      }
+      span p{
+        width: 95%;
+        font-size: 25px!important;
+      }
+      #counter{
+        font-size: 25px!important;
+        padding:30px;
+      }
+      .hover.playpausebtn{
+        margin-bottom: 80px;
       }
 }
