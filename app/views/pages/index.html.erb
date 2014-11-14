@@ -1,159 +1,85 @@
-<div class="main container">
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53ae13645d441e83"></script>
-	<%= render 'layouts/githubLogo' %>
+<div class="main-container">
 
-	<span id="animated-example" class="animated fadeInDown"><p>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”<br/><br/><br/> Front-End Developer since<div id="counter"></div></p></span>
+  <!-- Header with Navigation -->
+<div id="header">
+    <h1>J.c</h1>
+    <ul id="navigation">
+        <li><a id="link-home" href="#home">Home</a></li>
+        <li><a id="link-portfolio" href="#portfolio">Portfolio</a></li>
+        <li><a id="link-about" href="#about">About Me</a></li>
+        <li><a id="link-contact" href="#contact">Contact</a></li>
+    </ul>
+</div>
+<!-- Home -->
+<div id="home" class="content">
+<h1 class="body-paragraph front">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</h1>
+</div> 
+<!-- /Home -->
+ 
+<!-- Portfolio -->
+<div id="portfolio" class="panel">
+    <div class="content">
+        <h2>Portfolio</h2>
+        <a href="http://employtoy.com/" target="_black"><%= image_tag "employtoy.gif" %></a> 
+        <a href="http://www.openassembly.com/#/home" target="_black"><%= image_tag "openassembly.png"%></a>
+         <a href="https://www.farmivore.com/" target="_black"><%= image_tag "farm.png"%></a> 
+        <a href="http://rentah.com/" target="_black"><%= image_tag "rentah.png"%></a> 
+        <a href="http://eranyc.com/" target="_black"><%= image_tag "era.png"%></a> 
+  </div>
+</div>
+<!-- /Portfolio -->
+ 
+<!-- About -->
+<div id="about" class="panel">
+    <div class="content">
+        <h2>What I am about</h2>
+        <div class="row">
+        <div class="large-8 columns">       
+            <div class="paragraph-title">I'M <strong>Joseph Chavez</strong> AND I'M A FRONT END DEVELOPER</div><br/>
+            <div class="body-paragraph">Hi, my name is <strong>Joseph Chavez</strong>. I have been a front end developer for almost two years. I have been working on professional projects with different companies as well as on my own. My passion is to solve complex problems and continue to learn and use various front and backend skills.<br/><br/>
 
+            As a hobby, I enjoy reading books relating to physics and astronomy. As a developer, I am open and willing to work and learn more about any given task with no excuse. I am very interested to work on projects that challenge me.<br/><br/>
 
-	<div class="picture-header" 
-     data-top="opacity: 1" data--600-top="opacity: 0">
-		<div class="filter"></div>
-	</div> 
-
-	    <div class="child-container">
-			<div class="content"
-			data-bottom="opacity: 0" 
-			data--50-bottom="opacity: 1">
-				<div class="row">
-		         	<div class="large-6 columns">
-						<p>Hi, my name is Joseph CC. I have been a front end developer for almost two years. I have been working on professional projects with different companies as well as on my own. My passion is to solve complex problems and continue to learn and use various front and backend skills.<br/><br/>
-
-						As a hobby, I enjoy reading books relating to physics and astronomy. As a developer, I am open and willing to work and learn more about any given task with no excuse. I am very interested to work on projects that challenge me.<br/><br/>
-
-						I would like to be given the opportunity to utilize and apply my skills, abilities and knowledge to help become a true asset to my next employer.  So enough writing, let's change the world together.  </p>
-			 		</div>
-			 		<div class="large-6 columns">
-			 		<%= image_tag("space.jpg") %>
-			 		</div>
-			 	</div>
-		 	</div>
-		 	
-		<div class="content2"data-bottom="opacity: 1" data-800-bottom="opacity: 0">
-		    <h1 class="subheader">Some Of My Work Below</h1>
-		 	<div class="row">
-			 	<div class="medium-2 columns"
-	            data-bottom-top="transform: scale(0)"
-	            data-top="transform: scale(1)"
-			 	>
-					 <div class="hover playpausebtn">
-						<div class="front"> 
-							<div class="word">
-							    <h2 class="lead">Start</h2>
-							    <h2 class="lead">Comienzo</h2>
-							    <h2 class="lead">प्रारंभ</h2>
-							    <h2 class="lead">بداية</h2>
-							    <h2 class="lead">Begin</h2>
-							    <h2 class="lead">Fillim</h2>
-							    <h2 class="lead">սկիզբ</h2>
-							    <h2 class="lead">Irteeran</h2>
-							    <h2 class="lead">пачатак</h2>
-							    <h2 class="lead">শুরু</h2>
-							    <h2 class="lead">početak</h2>
-							    <h2 class="lead">начало</h2>
-							    <h2 class="lead">començament</h2>
-							    <h2 class="lead">pagsugod</h2>
-							    <h2 class="lead">开始</h2>  
-							    <h2 class="lead">התחלה</h2>
-							    <h2 class="lead">प्रारंभ</h2>
-							    <h2 class="lead">pib</h2>
-							    <h2 class="lead">kezdet</h2>
-							    <h2 class="lead">byrjun</h2>
-							</div>
-					    </div>
-				    <div class="pulsar"></div>
-				    <div class="back"><div class="triangle-right"></div></div> 
-					</div>
-				</div>
-         		<div class="medium-8 columns" >
-			         <p>
-			         Viojar is a personal android video application that will make sharing videos easier between social media. You are probably thinking there are already applications that do that already. Well, my algorithm will not only make sharing easy but it will make uploading and watching videos much faster by compressing the size of the video to its limit without loosing quality on the video.
-			        <!--  <h6><a href=""> LAUNCH WEBSITE</a></h6><%= render 'layouts/svg' %> -->
-			         </p>
-
-			           <h2>Technology used</h2>
-				          <span class="radius secondary label"><h6>Ruby On Rails</h6></span>
-				          <span class="radius secondary label"><h6>Jquery</h6></span>
-				          <span class="radius secondary label"><h6>sass</h6></span>
-				          <span class="radius secondary label"><h6>css3</h6></span>
-				          <span class="radius secondary label"><h6>html5</h6></span>
-				          <span class="radius secondary label"><h6>Jruby</h6></span>
-				          <span class="radius secondary label"><h6>mongodb</h6></span>
-				          <span class="radius secondary label"><h6>Git</h6></span>
-         		 </div>
-            </div>
-		</div>
-
-		<div class="content3"data-bottom="opacity: 1" data-800-bottom="opacity: 0">
-			<div class="row">
-				<div class="medium-7 columns">
-					<p> When Jerry the founder of Employtoy first approached me to join his team, I could have never imagined that the event would be a catalyst towards me becoming a Lead Front-end developer. Fast forward a few months later, there I was, taking a huge responsability of a website. Soon we will revolutionize the way companies look for employers and people find jobs.<br /><br />
-
-					What initally began as an a internship, Employtoy will become my nest for growth and lerning.I had the opportunity to become a lead front-end developer of a startup company that is not only inpacting the world in a positive way, but is changing how people find jobs out there in an already saturated market.
-                     <h6><a href="http://www.employtoy.com/" target="_blank"> LAUNCH WEBSITE</a></h6><%= render 'layouts/svg' %>
-					</p>
-
-					 <h2>Technology used</h2>
-			           <span class="radius secondary label"><h6>html5</h6></span>
-			           <span class="radius secondary label"><h6>css3</h6></span>
-			           <span class="radius secondary label"><h6>sass</h6></span>
-			           <span class="radius secondary label"><h6>haml</h6></span>
-			           <span class="radius secondary label"><h6>coffescript</h6></span>
-			           <span class="radius secondary label"><h6>Jquery</h6></span>
-			           <span class="radius secondary label"><h6>angular.js</h6></span>
-			           <span class="radius secondary label"><h6>Git</h6></span>
-				</div>
-			    <div class="medium-5 columns" style="margin-top:50px;"
-	            data-anchor-target=".content3"
-	            data-bottom-top="transform: scale(0)"
-	            data-top="transform: scale(1)"
-			    >
-				  	<%= image_tag("logo-509x128px.png") %>
-				</div>
-			</div>
-		</div>
-		<div class="content4"data-bottom="opacity: 1" data-800-bottom="opacity: 0">
-			<div class="row">
-				<div class="medium-5 columns"
-		         data-anchor-target=".content4"
-		         data-bottom-top="transform: scale(0)"
-		         data-top="transform: scale(1)">
-
-					 <%= image_tag("blender3d.png") %>
-					 </div>
-				<div class="medium-7 columns">
-				   <p> Via is a artificial intelligence app that will interact with humans in their everyday life journey. Asking question to people is one of the most difficult things for people. Sometimes you don’t have the courage to do so, or you just to shy to do such thing. Well Via will be so smart that even asking to read you stories from the romans will not be a problem. Wait for a new beginning. YOU WILL LIKE IT…
-					<!--  <h6><a href=""> LAUNCH WEBSITE</a></h6><%= render 'layouts/svg' %> -->
-				   </p>
-				   
-				    <h2>Technology used</h2>
-			        <span class="radius secondary label"><h6>android SDk</h6></span>
-			        <span class="radius secondary label"><h6>webGl</h6></span>
-			        <span class="radius secondary label"><h6>Git</h6></span>
-				</div>
-			</div>
-	    </div>
-	<%= render 'layouts/footer' %>
-	</div>
-</div>	
-
-<script>
-$('.picture-header').load('.picture-header');
-
-	 $(function() {
-     var windowWidth = $(window).width();
-     if(windowWidth > 890){
-  skrollr.init({
-  forceHeight: false
-  });
-  }});
-</script>
-
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
+            I would like to be given the opportunity to utilize and apply my skills, abilities and knowledge to help become a true asset to my next employer. So enough writing, let's change the world together.</div>
+           </div>
+       </div> 
+    </div>
+     
+</div>
+<!-- /About -->
+ 
+<!-- Contact -->
+<div id="contact" class="panel">
+    <div class="content">
+   <h2>Contact</h2> 
+   <form>
+  <div class="row">
+  <div class="large-8 columns">
+    <div class="large-6 columns">
+        <input type="text" placeholder="first Name" />
+    </div>
+    <div class="large-6 columns">
+        <input type="text" placeholder="Last Name" />
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="large-8 columns">
+    <br/><br/><br/>
+      <label>
+        <textarea placeholder="Let me know how I can help you"></textarea>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+  <br/><br/><br/>
+    <div class="large-8 columns">
+   <a href="#" class="button expand">Submit</a>
+   </div>
+   </div>
+</form>
+     <%= image_tag "miny_logo.png" %>
+    </div>
+</div>
+<!-- /Contact -->  
+</div>
