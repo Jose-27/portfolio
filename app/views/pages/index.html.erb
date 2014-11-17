@@ -1,85 +1,230 @@
-<div class="main-container">
+      <!--  ====================
+       debug check box
+       ==================== -->
+      <div class="debug">
+        <label><input type="checkbox"><h1>See behind the Parallax</h1></label>
+      </div>
+      <!--  =================================================
+                      Search input 
+       =====================================================-->
+          <div id="morphsearch" class="morphsearch">
+        <form class="morphsearch-form">
+          <input class="morphsearch-input" type="search" placeholder="Search........"/>
+        </form>
+        <div class="morphsearch-content">
+          <div class="dummy-column">
+            <h2>Men's Shoes</h2>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+              <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+               <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+               <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+              <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+               <h3>GUCCI</h3>
+            </a>
+           <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+               <h3>GUCCI</h3>
+            </a>
+          </div>
+          <div class="dummy-column">
+            <h2>WOMEN'S SHOES</h2>
+            <a class="dummy-media-object">
+              <img class="round" src="http://image.s5a.com/is/image/saks/0440929071062_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+             <a class="dummy-media-object">
+              <img class="round" src="http://image.s5a.com/is/image/saks/0440929071062_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+           <a class="dummy-media-object">
+              <img class="round" src="http://image.s5a.com/is/image/saks/0440929071062_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+           <a class="dummy-media-object">
+              <img class="round" src="http://image.s5a.com/is/image/saks/0440929071062_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+          </div>
+          <div class="dummy-column">
+            <h2>NEW & POPULAR</h2>
+            <a class="dummy-media-object">
+              <img src="http://image.s5a.com/is/image/saks/0476500313009_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img src="http://image.s5a.com/is/image/saks/0476500313009_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+             <a class="dummy-media-object">
+              <img src="http://image.s5a.com/is/image/saks/0476500313009_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+           <a class="dummy-media-object">
+              <img src="http://image.s5a.com/is/image/saks/0476500313009_247x329.jpg"/>
+              <h3>GUCCI</h3></a>
+          </div>
+        </div><!-- morphsearch-content -->
+        <span class="morphsearch-close"></span>
+      </div><!-- morphsearch -->
 
-  <!-- Header with Navigation -->
-<div id="header">
-    <h1>J.c</h1>
-    <ul id="navigation">
-        <li><a id="link-home" href="#home">Home</a></li>
-        <li><a id="link-portfolio" href="#portfolio">Portfolio</a></li>
-        <li><a id="link-about" href="#about">About Me</a></li>
-        <li><a id="link-contact" href="#contact">Contact</a></li>
-    </ul>
-</div>
-<!-- Home -->
-<div id="home" class="content">
-<h1 class="body-paragraph front">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</h1>
-</div> 
-<!-- /Home -->
- 
-<!-- Portfolio -->
-<div id="portfolio" class="panel">
-    <div class="content">
-        <h2>Portfolio</h2>
-        <a href="http://employtoy.com/" target="_black"><%= image_tag "employtoy.gif" %></a> 
-        <a href="http://www.openassembly.com/#/home" target="_black"><%= image_tag "openassembly.png"%></a>
-         <a href="https://www.farmivore.com/" target="_black"><%= image_tag "farm.png"%></a> 
-        <a href="http://rentah.com/" target="_black"><%= image_tag "rentah.png"%></a> 
-        <a href="http://eranyc.com/" target="_black"><%= image_tag "era.png"%></a> 
-  </div>
-</div>
-<!-- /Portfolio -->
- 
-<!-- About -->
-<div id="about" class="panel">
-    <div class="content">
-        <h2>What I am about</h2>
-        <div class="row">
-        <div class="large-8 columns">       
-            <div class="paragraph-title">I'M <strong>Joseph Chavez</strong> AND I'M A FRONT END DEVELOPER</div><br/>
-            <div class="body-paragraph">Hi, my name is <strong>Joseph Chavez</strong>. I have been a front end developer for almost two years. I have been working on professional projects with different companies as well as on my own. My passion is to solve complex problems and continue to learn and use various front and backend skills.<br/><br/>
+      <!--  =================================================
+                       Parallax Containers
+       =====================================================-->
+      <div class="parallax">
+        <div id="group1" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+            <div class="animated fadeInDown ">
+             <%= image_tag 'blackSaksLogo.gif', width: '600' %>
+             </div>
+          </div>
+        </div>
 
-            As a hobby, I enjoy reading books relating to physics and astronomy. As a developer, I am open and willing to work and learn more about any given task with no excuse. I am very interested to work on projects that challenge me.<br/><br/>
+        <div id="group2" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+          <div class="parallax__layer parallax__layer--back">
+           <%= image_tag 'saksLogo.svg.gif'%>
+          </div>
+        </div>
 
-            I would like to be given the opportunity to utilize and apply my skills, abilities and knowledge to help become a true asset to my next employer. So enough writing, let's change the world together.</div>
+        <div id="group3" class="parallax__group">
+          <div class="parallax__layer parallax__layer--fore">
+          </div>
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+        </div>
+
+        <div id="group4" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+          <div class="parallax__layer parallax__layer--back">
+               <!-- Crazy circle -->
+            <div class="circle" id="circle"><%= image_tag 'saksLogo.svg.gif', width: '200'%></div>
+            <!--  3D images -->
+           <div class="image-container">
+           <div class="first-left">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/left-3.png?06202014">
            </div>
-       </div> 
-    </div>
-     
-</div>
-<!-- /About -->
- 
-<!-- Contact -->
-<div id="contact" class="panel">
-    <div class="content">
-   <h2>Contact</h2> 
-   <form>
-  <div class="row">
-  <div class="large-8 columns">
-    <div class="large-6 columns">
-        <input type="text" placeholder="first Name" />
-    </div>
-    <div class="large-6 columns">
-        <input type="text" placeholder="Last Name" />
-    </div>
-  </div>
-  </div>
-  <div class="row">
-    <div class="large-8 columns">
-    <br/><br/><br/>
-      <label>
-        <textarea placeholder="Let me know how I can help you"></textarea>
-      </label>
-    </div>
-  </div>
-  <div class="row">
-  <br/><br/><br/>
-    <div class="large-8 columns">
-   <a href="#" class="button expand">Submit</a>
-   </div>
-   </div>
-</form>
-     <%= image_tag "miny_logo.png" %>
-    </div>
-</div>
-<!-- /Contact -->  
-</div>
+           <div class="second-left">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/left-2.png?06202014">
+           </div>
+           <div class="third-left">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/left-1.png?06202014">
+           </div>
+
+            <div class="first-right">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/right-3.png?06202014">
+           </div>
+            <div class="second-right">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/right-2.png?06202014">
+           </div>
+            <div class="third-right">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/right-1.png?06202014">
+           </div>
+           </div>
+           <!-- End 3d -->
+          </div>
+          <div class="parallax__layer parallax__layer--deep">
+          </div>
+        </div>
+
+        <div id="group5" class="parallax__group">
+          <div class="parallax__layer parallax__layer--fore">
+          </div>
+          <div class="parallax__layer parallax__layer--base">       
+          </div>
+        </div>
+
+        <div id="group6" class="parallax__group">
+          <div class="parallax__layer parallax__layer--back">
+           <%= image_tag 'fashionWeek.gif'%>
+          </div>
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+        </div>
+        <div id="group7" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+        </div>
+      </div><!--End parallax Containers -->
+
+<script>
+// ==================================
+//  Joseph Chavez   WORK
+// =================================
+// The job of this function is to listen if the input is checked,
+// and if is replaced with with the debug-on class
+var debugInput = document.querySelector("input");
+
+function updateDebugState() {
+  document.body.classList.toggle('debug-on', debugInput.checked);
+}
+debugInput.addEventListener("click", updateDebugState);
+updateDebugState();
+
+//  =====================================================
+//                 Search input Function
+//  =====================================================
+(function() {
+  var morphSearch = document.getElementById('morphsearch'),
+    input = morphSearch.querySelector('input.morphsearch-input'),
+    ctrlClose = morphSearch.querySelector('span.morphsearch-close'),
+    isOpen = isAnimating = false,
+    // show/hide search area
+    toggleSearch = function(evt) {
+      // return if open and the input gets focused
+      if (evt.type.toLowerCase() === 'focus' && isOpen) return false;
+
+      var offsets = morphsearch.getBoundingClientRect();
+      if (isOpen) {
+        classie.remove(morphSearch, 'open');
+
+        // trick to hide input text once the search overlay closes 
+        // todo: hardcoded times, should be done after transition ends
+        if (input.value !== '') {
+          setTimeout(function() {
+            classie.add(morphSearch, 'hideInput');
+            setTimeout(function() {
+              classie.remove(morphSearch, 'hideInput');
+              input.value = '';
+            }, 300);
+          }, 500);
+        }
+
+        input.blur();
+      } else {
+        classie.add(morphSearch, 'open');
+      }
+      isOpen = !isOpen;
+    };
+
+  // events
+  input.addEventListener('focus', toggleSearch);
+  ctrlClose.addEventListener('click', toggleSearch);
+  // esc key closes search overlay
+  // keyboard navigation events
+  document.addEventListener('keydown', function(ev) {
+    var keyCode = ev.keyCode || ev.which;
+    if (keyCode === 27 && isOpen) {
+      toggleSearch(ev);
+    }
+  });
+  // Do Not allow to submit the form 
+  morphSearch.querySelector('button[type="submit"]').addEventListener('click', function(ev) {
+    ev.preventDefault();
+  });
+})();
+</script>
