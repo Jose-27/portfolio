@@ -241,7 +241,7 @@
   .circle {
   color: #dcdce2;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   margin-left: -140px;
   margin-top: -140px;
@@ -707,65 +707,30 @@ a:focus {
 3D image container
 ---------------------------------------------------*/
 .image-container{
-  position: absolute; 
-  -webkit-transform-origin: 50% 50%; 
-  -webkit-transform-style: flat; 
-  -webkit-backface-visibility: hidden; 
-  -webkit-transform: translate3d(148px, 0px, 0px);
-   width: 100%;
-   margin: 8% auto; 
+   width: 80%;
+   margin:8% auto; 
 }
 .first-left{
- position: absolute; 
   -webkit-transform-origin: 50% 50%; 
   -webkit-transform-style: flat; 
   -webkit-backface-visibility: hidden; 
   -webkit-transform: translate3d(30px, 190px, 0px);
    z-index: 1; 
-   display: block;
+   display: inline-block;
 }
 .second-left{
-  position: absolute; 
   -webkit-transform-origin: 50% 50%;
   -webkit-transform-style: flat;
   -webkit-backface-visibility: hidden; 
   -webkit-transform: translate3d(30px, 150px, 0px);
   z-index: 2; 
-  display: block;
+  display: inline-block;
 }
 .third-left{
- position: absolute;
   -webkit-transform-origin: 50% 50%; 
   -webkit-transform-style: flat; 
   -webkit-backface-visibility: hidden; 
   -webkit-transform: translate3d(120px, 120px, 0px);
   z-index: 3; 
-  display: block;
-}
-.first-right{
-  position: absolute;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-transform-style: flat;
-  -webkit-backface-visibility: hidden; 
-  -webkit-transform: translate3d(1154px, 190px, 0px);
-  z-index: 1; 
-  display: block;
-}
-.second-right{
-  position: absolute;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-transform-style: flat; 
-  -webkit-backface-visibility: hidden; 
-  -webkit-transform: translate3d(1110px, 150px, 0px); 
-  z-index: 2; 
-  display: block;
-}
-.third-right{
-  position: absolute;
-  -webkit-transform-origin: 50% 50%; 
-  -webkit-transform-style: flat; 
-  -webkit-backface-visibility: hidden; 
-  -webkit-transform: translate3d(1091px, 120px, 0px); 
-  z-index: 3; 
-  display: block;
+  display: inline-block;
 }
