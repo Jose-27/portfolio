@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+<<<<<<< HEAD
 //= require modernizr-2.6.2.min
+=======
+//= require turbolinks
+>>>>>>> 06f952941bd0374bdd77504698de3b3ee94e4151
 //= require_tree .
