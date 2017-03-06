@@ -15,8 +15,6 @@ gem 'coffee-rails', '~> 4.0.0'
 group :development do
   gem 'rails_layout', github: 'RailsApps/rails_layout'
 end
-#mongodb
-gem 'mongoid', '~> 4', github: 'mongoid/mongoid'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
